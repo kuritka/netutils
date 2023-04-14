@@ -11,3 +11,9 @@ Then just type in the command prompt:
 ```shell
 dnsutils -- bin/sh
 ```
+
+additionally you can add:
+```shell
+alias dnstools='kubectl run -it --rm dnsutils --image=docker.io/kuritka/netutils-amd64:v1.0.0 --restart=Never -n default'
+alias dnsutils=dnstools
+```
